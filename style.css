@@ -1,0 +1,47 @@
+:root{
+    
+    --white: white;
+    --black: black;
+
+    /* neutral */
+    --gray-1: rgb(235,235,235);
+    --gray-2: rgb(215, 215, 215);
+    --gray-3: rgb(190, 190,190);
+    --gray-4: rgb(170,170,170);
+    --gray-5: rgb(150,150,150);
+    --gray-6: rgb(130,130,130);
+    --gray-7: rgb(110,110,110);
+    --gray-8: rgb(90,90,90);
+    --gray-9: rgb(70,70,70);
+    --gray-10: rgb(50,50,50);
+    --gray-11: rgb(30,30,30);
+    --gray-12: rgb(10,10,10);
+
+    /* cold*/
+    --cold-gray-1: rgb(235,235,255);
+    --cold-gray-2: rgb(215, 215, 235);
+    --cold-gray-3: rgb(190, 190,215);
+    --cold-gray-4: rgb(170,170,190);
+    --cold-gray-5: rgb(150,150,170);
+    --cold-gray-6: rgb(130,130,150);
+    --cold-gray-7: rgb(110,110,130);
+    --cold-gray-8: rgb(90,90,110);
+    --cold-gray-9: rgb(70,70,90);
+    --cold-gray-10: rgb(50,50,70);
+    --cold-gray-11: rgb(30,30,50);
+    --cold-gray-12: rgb(10,10,30);
+
+    /* warm*/
+    --warm-gray-1: rgb(255,235,235);
+    --warm-gray-2: rgb(235, 215, 215);
+    --warm-gray-3: rgb(215, 190,190);
+    --warm-gray-4: rgb(190,170,170);
+    --warm-gray-5: rgb(170,150,150);
+    --warm-gray-6: rgb(150,130,130);
+    --warm-gray-7: rgb(130,110,110);
+    --warm-gray-8: rgb(110,90,90);
+    --warm-gray-9: rgb(90,70,70);
+    --warm-gray-10: rgb(70,50,50);
+    --warm-gray-11: rgb(50,30,30);
+    --warm-gray-12: rgb(30,10,10);
+}
