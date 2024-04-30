@@ -80,6 +80,28 @@
      
         radial-gradient( circle at 30% 45%, var(--warm-gray-1) 26%, transparent 27%),
 
+        /* stars */
+        radial-gradient(circle at 68% 40%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 67% 40%, var(--warm-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 63% 45%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 75% 35%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 55% 10%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 76% 21%, var(--cold-gray-1) .2%, transparent .2%),
+
+        radial-gradient(circle at 78% 30%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 65% 20%, var(--warm-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 13% 50%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 25% 25%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 15% 15%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 86% 11%, var(--warm-gray-2) .2%, transparent .2%),
+
+        radial-gradient(circle at 75% 40%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 70% 8%, var(--warm-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 3% 8%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 5% 15%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 85% 15%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 80% 10%, var(--cold-gray-1) .2%, transparent .2%),
+
         /* sky */
         linear-gradient(var(--cold-gray-12) 30%, var(--gray-3) 100%);
         background-repeat: no-repeat;
