@@ -1,3 +1,4 @@
+/* gray scale pallet */
 :root{
     
     --white: white;
@@ -44,4 +45,44 @@
     --warm-gray-10: rgb(70,50,50);
     --warm-gray-11: rgb(50,30,30);
     --warm-gray-12: rgb(30,10,10);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+#city{
+    block-size: 100vh;
+    inline-size: 100vw;
+    position: absolute;
+    background-color: var( --gray-6);
+
+    
+    background:
+    
+        /* ground */
+        linear-gradient(transparent 2%, var(--warm-gray-6) 4%, var(--gray-8) )
+            100% 100% / 100% 25%, 
+
+        /* buildings layer 1 */
+
+        /* sun */
+
+        radial-gradient( circle at 30% -15%, var(--warm-gray-4) 25%, transparent 26%)
+        30% 100% / 100% 45%,
+
+        radial-gradient( circle at 30% 0%, var(--warm-gray-3) 25%, transparent 26%)
+            30% 115% / 100% 60%,
+
+        radial-gradient( circle at 30% 20%, var(--warm-gray-2) 25%, transparent 26%)
+            30% 105% / 100% 70%,
+     
+        radial-gradient( circle at 30% 45%, var(--warm-gray-1) 26%, transparent 27%),
+
+        /* sky */
+        linear-gradient(var(--cold-gray-12) 30%, var(--gray-3) 100%);
+        background-repeat: no-repeat;
+      
+       
 }
