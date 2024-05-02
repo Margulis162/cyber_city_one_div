@@ -18,19 +18,19 @@
     --gray-11: rgb(30,30,30);
     --gray-12: rgb(10,10,10);
 
-    /* cold*/
-    --cold-gray-1: rgb(235,235,255);
-    --cold-gray-2: rgb(215, 215, 235);
-    --cold-gray-3: rgb(190, 190,215);
-    --cold-gray-4: rgb(170,170,190);
-    --cold-gray-5: rgb(150,150,170);
-    --cold-gray-6: rgb(130,130,150);
-    --cold-gray-7: rgb(110,110,130);
-    --cold-gray-8: rgb(90,90,110);
-    --cold-gray-9: rgb(70,70,90);
-    --cold-gray-10: rgb(50,50,70);
-    --cold-gray-11: rgb(30,30,50);
-    --cold-gray-12: rgb(10,10,30);
+    /* cool*/
+    --cool-gray-1: rgb(235,235,255);
+    --cool-gray-2: rgb(215, 215, 235);
+    --cool-gray-3: rgb(190, 190,215);
+    --cool-gray-4: rgb(170,170,190);
+    --cool-gray-5: rgb(150,150,170);
+    --cool-gray-6: rgb(130,130,150);
+    --cool-gray-7: rgb(110,110,130);
+    --cool-gray-8: rgb(90,90,110);
+    --cool-gray-9: rgb(70,70,90);
+    --cool-gray-10: rgb(50,50,70);
+    --cool-gray-11: rgb(30,30,50);
+    --cool-gray-12: rgb(10,10,30);
 
     /* warm*/
     --warm-gray-1: rgb(255,235,235);
@@ -62,48 +62,77 @@
     background:
     
         /* ground */
-        linear-gradient(transparent 2%, var(--warm-gray-6) 4%, var(--gray-8) )
+            /* top line  */
+        linear-gradient(var(--warm-gray-1) 4%, var(--gray-2) )
+        100% 75% / 100% .1%, 
+            /* main */
+        linear-gradient( var(--warm-gray-6) 4%, var(--gray-8) )
             100% 100% / 100% 25%, 
 
         /* buildings layer 1 */
+
+
+        /* set 1 */
+            /* windows  */
+
+        linear-gradient(  var(--cool-gray-8) 1%, var(--cool-gray-5) 30%, var(--cool-gray-5))
+            32% 65% / 2% 1%,
+
+        linear-gradient(  var(--warm-gray-12) 1%, var(--gray-10) 30%, var(--gray-10))
+            29.5% 60% / 2% 1%,
+
+        linear-gradient( var(--warm-gray-12) 1%, var(--cool-gray-10) 30%, var(--gray-10))
+            32% 55% / 2% 1%,
+
+        linear-gradient( var(--warm-gray-11) 1%, var(--gray-9) 30%, var(--gray-9))
+            29.5% 50% / 2% 1%,
+        
+            /* buildeings  */
+        linear-gradient( 145deg, transparent 30%, var(--gray-8) 30%, var(--warm-gray-4))
+            30% 60% / 5% 45%,
+        linear-gradient( 215deg, transparent 30%, var(--gray-8) 30%, var(--warm-gray-4))
+            35.5% 40% / 5% 60%,  
+        linear-gradient(  transparent 30%, var(--warm-gray-2) 30%, var(--warm-gray-2))
+            33.7% 55% / .5% 45%,
+        
 
         /* sun */
 
         radial-gradient( circle at 30% -15%, var(--warm-gray-4) 25%, transparent 26%)
         30% 100% / 100% 45%,
 
-        radial-gradient( circle at 30% 0%, var(--warm-gray-3) 25%, transparent 26%)
-            30% 115% / 100% 60%,
+        radial-gradient( circle at 30% 5%, var(--warm-gray-3) 25%, transparent 26%)
+        30% 110% / 100% 60%,
 
-        radial-gradient( circle at 30% 20%, var(--warm-gray-2) 25%, transparent 26%)
-            30% 105% / 100% 70%,
+        radial-gradient( circle at 30% 20%, var(--warm-gray-2) 26%, transparent 27%)
+        30% 85% / 100% 60%,
      
         radial-gradient( circle at 30% 45%, var(--warm-gray-1) 26%, transparent 27%),
 
         /* stars */
-        radial-gradient(circle at 68% 40%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 68% 40%, var(--cool-gray-1) .2%, transparent .2%),
         radial-gradient(circle at 67% 40%, var(--warm-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 63% 45%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 75% 35%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 55% 10%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 76% 21%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 63% 45%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 75% 35%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 55% 10%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 76% 21%, var(--cool-gray-1) .2%, transparent .2%),
 
-        radial-gradient(circle at 78% 30%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 78% 30%, var(--cool-gray-1) .2%, transparent .2%),
         radial-gradient(circle at 65% 20%, var(--warm-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 13% 50%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 25% 25%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 15% 15%, var(--cold-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 13% 50%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 25% 25%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 15% 15%, var(--cool-gray-2) .1%, transparent .1%),
         radial-gradient(circle at 86% 11%, var(--warm-gray-2) .2%, transparent .2%),
 
-        radial-gradient(circle at 75% 40%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 75% 40%, var(--cool-gray-1) .2%, transparent .2%),
         radial-gradient(circle at 70% 8%, var(--warm-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 3% 8%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 5% 15%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 85% 15%, var(--cold-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 80% 10%, var(--cold-gray-1) .2%, transparent .2%),
+        radial-gradient(circle at 3% 8%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 5% 15%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 85% 15%, var(--cool-gray-2) .1%, transparent .1%),
+        radial-gradient(circle at 80% 10%, var(--cool-gray-1) .2%, transparent .2%),
 
         /* sky */
-        linear-gradient(var(--cold-gray-12) 30%, var(--gray-3) 100%);
+        linear-gradient(var(--cool-gray-12) 30%, var(--gray-3) 100%);
         background-repeat: no-repeat;
       
        
