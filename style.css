@@ -50,90 +50,42 @@
 *{
     margin:0;
     padding:0;
+ }
+
+body{
+    background-color: var( --gray-6);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    block-size: 90vh;
 }
 
 #city{
-    block-size: 100vh;
-    inline-size: 100vw;
+    block-size: 465px;
+    inline-size: 960px;
     position: absolute;
-    background-color: var( --gray-6);
+    margin-inline: auto;
+    margin-block: auto;
+    background-color: var( --gray-8);
 
-    
     background:
-    
-        /* ground */
-            /* top line  */
-        linear-gradient(var(--warm-gray-1) 4%, var(--gray-2) )
-        100% 75% / 100% .1%, 
-            /* main */
-        linear-gradient( var(--warm-gray-6) 4%, var(--gray-8) )
-            100% 100% / 100% 25%, 
-
-        /* buildings layer 1 */
-
-
-        /* set 1 */
-            /* windows  */
-
-        linear-gradient(  var(--cool-gray-8) 1%, var(--cool-gray-5) 30%, var(--cool-gray-5))
-            32% 65% / 2% 1%,
-
-        linear-gradient(  var(--warm-gray-12) 1%, var(--gray-10) 30%, var(--gray-10))
-            29.5% 60% / 2% 1%,
-
-        linear-gradient( var(--warm-gray-12) 1%, var(--cool-gray-10) 30%, var(--gray-10))
-            32% 55% / 2% 1%,
-
-        linear-gradient( var(--warm-gray-11) 1%, var(--gray-9) 30%, var(--gray-9))
-            29.5% 50% / 2% 1%,
-        
-            /* buildeings  */
-        linear-gradient( 145deg, transparent 30%, var(--gray-8) 30%, var(--warm-gray-4))
-            30% 60% / 5% 45%,
-        linear-gradient( 215deg, transparent 30%, var(--gray-8) 30%, var(--warm-gray-4))
-            35.5% 40% / 5% 60%,  
-        linear-gradient(  transparent 30%, var(--warm-gray-2) 30%, var(--warm-gray-2))
-            33.7% 55% / .5% 45%,
-        
-
         /* sun */
+        radial-gradient(circle at 400px 400px, var(--warm-gray-1) 140px, transparent 140px)
+            0px -150px / 960px 465px, 
 
-        radial-gradient( circle at 30% -15%, var(--warm-gray-4) 25%, transparent 26%)
-        30% 100% / 100% 45%,
-
-        radial-gradient( circle at 30% 5%, var(--warm-gray-3) 25%, transparent 26%)
-        30% 110% / 100% 60%,
-
-        radial-gradient( circle at 30% 20%, var(--warm-gray-2) 26%, transparent 27%)
-        30% 85% / 100% 60%,
-     
-        radial-gradient( circle at 30% 45%, var(--warm-gray-1) 26%, transparent 27%),
-
-        /* stars */
-        radial-gradient(circle at 68% 40%, var(--cool-gray-1) .2%, transparent .2%),
-        radial-gradient(circle at 67% 40%, var(--warm-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 63% 45%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 75% 35%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 55% 10%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 76% 21%, var(--cool-gray-1) .2%, transparent .2%),
-
-        radial-gradient(circle at 78% 30%, var(--cool-gray-1) .2%, transparent .2%),
-        radial-gradient(circle at 65% 20%, var(--warm-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 13% 50%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 25% 25%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 15% 15%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 86% 11%, var(--warm-gray-2) .2%, transparent .2%),
-
-        radial-gradient(circle at 75% 40%, var(--cool-gray-1) .2%, transparent .2%),
-        radial-gradient(circle at 70% 8%, var(--warm-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 3% 8%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 5% 15%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 85% 15%, var(--cool-gray-2) .1%, transparent .1%),
-        radial-gradient(circle at 80% 10%, var(--cool-gray-1) .2%, transparent .2%),
+        /* ground */
+        linear-gradient(var(--warm-gray-4) 30%, var(--warm-gray-4))
+            0px 315px / 960px 1px,
+        linear-gradient(var(--gray-6) 30%, var(--cool-gray-12))
+            0px 315px / 960px 155px,
 
         /* sky */
-        linear-gradient(var(--cool-gray-12) 30%, var(--gray-3) 100%);
-        background-repeat: no-repeat;
+        linear-gradient(var(--cool-gray-12) 30%, var(--cool-gray-4)); 
+    
+    background-repeat: no-repeat;
+    
+
       
        
 }
